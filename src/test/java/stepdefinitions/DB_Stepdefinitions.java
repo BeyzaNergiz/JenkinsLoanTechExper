@@ -151,7 +151,7 @@ public class DB_Stepdefinitions {
     public void update_query_is_prepared_and_executed_to_the_divice_tokens_table() throws SQLException {
 
         query = QueryManage.getDeviceTokensInsertQuery();
-        id = 11;
+        id = 14;
         user_id = 0;
         is_app = 5;
         token = "n5rlvicckd0x";
@@ -175,7 +175,7 @@ public class DB_Stepdefinitions {
     public void update_query_is_prepared_and_executed_to_the_catagories_table() throws SQLException {
 
         query = QueryManage.getCategoriesInsertQuery();
-        id = 701;
+        id = 704;
         name = "Beyza Nergiz";
         description = "Add data to the category table test";
         System.out.println("id : "+ id);
@@ -204,7 +204,7 @@ public class DB_Stepdefinitions {
     }
     @Given("Total deposit is calculated.")
     public void total_deposit_is_calculated() throws SQLException {
-        int expectedTotalAmount = 179530;
+        int expectedTotalAmount = 182030;
         rs.next();
         int actualToalAmount= rs.getInt("total_amount");
         System.out.println(expectedTotalAmount+"   ***   "+actualToalAmount);
