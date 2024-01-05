@@ -8,13 +8,13 @@ import org.junit.runner.RunWith;
         plugin = {
                 "pretty",
                 "html:target/default-cucumber-reports.html",
-                "json:target/json-reports/cucumber.json",
+                "json:target/cucumber.json",
                 "junit:target/xml-report/cucumber.xml",
                 "rerun:target/failedRerun.txt"
         },
         features = "src/test/resources/DB",
         glue = {"stepdefinitions"},
-        tags = "@DB",
+        tags = "@end2end",
         dryRun =false
 
 )

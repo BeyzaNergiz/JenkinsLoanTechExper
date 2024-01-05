@@ -151,7 +151,7 @@ public class DB_Stepdefinitions {
     public void update_query_is_prepared_and_executed_to_the_divice_tokens_table() throws SQLException {
 
         query = QueryManage.getDeviceTokensInsertQuery();
-        id = 14;
+        id = 15;
         user_id = 0;
         is_app = 5;
         token = "n5rlvicckd0x";
@@ -175,7 +175,7 @@ public class DB_Stepdefinitions {
     public void update_query_is_prepared_and_executed_to_the_catagories_table() throws SQLException {
 
         query = QueryManage.getCategoriesInsertQuery();
-        id = 704;
+        id = 705;
         name = "Beyza Nergiz";
         description = "Add data to the category table test";
         System.out.println("id : "+ id);
