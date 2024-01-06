@@ -1,6 +1,6 @@
 @smoke
 Feature: As an administrator, I want to update the existing subscriber information via API connection.
-#Added Subscriber Id": 185
+
 
 
   Scenario Outline: TC01: When a valid POST request with appropriate authorization credentials, correct data (email),
@@ -15,7 +15,7 @@ Feature: As an administrator, I want to update the existing subscriber informati
     Examples:
       | id  |
       | 185 |
-    #test passed
+
 
 
   Scenario: TC02: When a valid POST request with appropriate authorization credentials, correct (id), and an
@@ -27,7 +27,7 @@ Feature: As an administrator, I want to update the existing subscriber informati
     When The API user sends a POST request and saves the response from the subscriber update endpoint with valid authorization information
     Then The API user verifies that the status code is 203
     And The API user verifies that the remark information in the response body is "failed"
-    #test passed
+
 
 
   Scenario: TC03: When a valid POST request with appropriate authorization credentials, correct (id), and incorrect data
@@ -39,7 +39,7 @@ Feature: As an administrator, I want to update the existing subscriber informati
     When The API user sends a POST request and saves the response from the subscriber update endpoint with valid authorization information
     Then The API user verifies that the status code is 203
     And The API user verifies that the remark information in the response body is "failed"
-    #test passed
+
 
 
   Scenario: TC04: When a POST request with valid authorization credentials and an empty (id) in the body
@@ -51,7 +51,7 @@ Feature: As an administrator, I want to update the existing subscriber informati
     When The API user sends a POST request and saves the response from the subscriber update endpoint with valid authorization information
     Then The API user verifies that the status code is 203
     And The API user verifies that the message information in the subscriber response body is "No id."
-    #test passed
+
 
 
   Scenario: TC05: When a POST request with valid authorization credentials and an (id) that does not correspond
@@ -63,7 +63,6 @@ Feature: As an administrator, I want to update the existing subscriber informati
     When The API user sends a POST request and saves the response from the subscriber update endpoint with valid authorization information
     Then The API user verifies that the status code is 203
     And The API user verifies that the message information in the subscriber response body is "There is no subscriber with this id to be updated"
-    #test passed
 
 
 
@@ -76,10 +75,10 @@ Feature: As an administrator, I want to update the existing subscriber informati
     When The API user sends a POST request and saves the response from the subscriber update endpoint with invalid authorization information
     Then The API user verifies that the status code is 401
     And The API user verifies that the error information in the response body is "Unauthorized request"
-    #test passed
 
 
-  @ayse
+
+
   Scenario Outline: TC07: The update of the desired subscriber record via API should be confirmed by sending a GET request
   to the 'api/subscriber/details/{{id}}' endpoint with the 'updated subscriber id' obtained from the response body.
   This verification process ensures that the record has been successfully updated
@@ -92,4 +91,4 @@ Feature: As an administrator, I want to update the existing subscriber informati
     Examples:
       | id  | valueId |
       | 185 | 185     |
-    #test passed
+
