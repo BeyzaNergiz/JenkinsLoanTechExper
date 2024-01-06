@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="21" time="20.5">
-    <testcase classname="As a user, I want to access the ticket details of a specified user through the API connection using their ID." name="#TC1 :" time="5.129">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="21" time="19.055">
+    <testcase classname="As a user, I want to access the ticket details of a specified user through the API connection using their ID." name="#TC1 :" time="4.371">
         <system-out>
             <![CDATA[Given The API user sets "user/ticket/detail/161" path parameters............passed
 And The API user saves the response from the user ticket detail endpoint with valid authorization information.passed
@@ -9,7 +9,7 @@ And The API user verifies that the success attribute in the response body is tru
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As a user, I want to access the ticket details of a specified user through the API connection using their ID." name="#TC2 :" time="0.857">
+    <testcase classname="As a user, I want to access the ticket details of a specified user through the API connection using their ID." name="#TC2 :" time="0.773">
         <system-out>
             <![CDATA[Given The API user sets "user/ticket/detail" path parameters................passed
 And The API user saves the response from the user ticket detail endpoint with valid authorization information.passed
@@ -18,7 +18,7 @@ And The API User verifies that the message information in the response body is "
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As a user, I want to access the ticket details of a specified user through the API connection using their ID." name="#TC3 :" time="0.844">
+    <testcase classname="As a user, I want to access the ticket details of a specified user through the API connection using their ID." name="#TC3 :" time="0.827">
         <system-out>
             <![CDATA[Given The API user sets "user/ticket/detail/777" path parameters............passed
 And The API user saves the response from the user ticket detail endpoint with valid authorization information.passed
@@ -27,14 +27,14 @@ And The API User verifies that the message information in the response body is "
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As a user, I want to access the ticket details of a specified user through the API connection using their ID." name="#TC4 :" time="0.367">
+    <testcase classname="As a user, I want to access the ticket details of a specified user through the API connection using their ID." name="#TC4 :" time="0.353">
         <system-out>
             <![CDATA[Given The API user sets "user/ticket/detail/161" path parameters............passed
 Then The API user records the response with invalid authorization information, verifies that the status code is '401' and confirms that the error information is Unauthorized.passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As a user, I want to access the ticket details of a specified user through the API connection using their ID." name="#TC5 :" time="0.922">
+    <testcase classname="As a user, I want to access the ticket details of a specified user through the API connection using their ID." name="#TC5 :" time="0.892">
         <system-out>
             <![CDATA[Given The API user sets "user/ticket/detail/161" path parameters............passed
 And The API user saves the response from the user ticket detail endpoint with valid authorization information.passed
@@ -42,7 +42,7 @@ Then The API user verifies that the content of the data field in the response bo
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As a user, I want to be able to create a new user ticket record through API connection." name="When a POST request with valid authorization information and correct data (subject, priority, message)" time="0.823">
+    <testcase classname="As a user, I want to be able to create a new user ticket record through API connection." name="When a POST request with valid authorization information and correct data (subject, priority, message)" time="0.759">
         <system-out>
             <![CDATA[Given The API user sets "user/ticket/add" path parameters...................passed
 And The API user prepares a POST request containing the correct data to send to the user ticket add endpoint.passed
@@ -52,7 +52,7 @@ And The API user verifies that the message information in the response body is "
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As a user, I want to be able to create a new user ticket record through API connection." name="When a POST request with valid authorization information and no data (subject, priority, message)" time="0.81">
+    <testcase classname="As a user, I want to be able to create a new user ticket record through API connection." name="When a POST request with valid authorization information and no data (subject, priority, message)" time="0.734">
         <system-out>
             <![CDATA[Given The API user sets "user/ticket/add" path parameters...................passed
 And The API user prepares a POST request without data to send to the user ticket add endpoint.passed
@@ -62,7 +62,7 @@ And The API user verifies that the remark information in the response body is "f
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As a user, I want to be able to create a new user ticket record through API connection." name="When a POST request with valid authorization information and incomplete missing data" time="0.854">
+    <testcase classname="As a user, I want to be able to create a new user ticket record through API connection." name="When a POST request with valid authorization information and incomplete missing data" time="0.765">
         <system-out>
             <![CDATA[Given The API user sets "user/ticket/add" path parameters...................passed
 And The API user prepares a POST request with missing data to send to the user ticket add endpoint..passed
@@ -72,7 +72,7 @@ And The API user verifies that the remark information in the response body is "f
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As a user, I want to be able to create a new user ticket record through API connection." name="Verify that when a POST request with invalid authorization information and correct data" time="0.442">
+    <testcase classname="As a user, I want to be able to create a new user ticket record through API connection." name="Verify that when a POST request with invalid authorization information and correct data" time="0.373">
         <system-out>
             <![CDATA[Given The API user sets "user/ticket/add" path parameters...................passed
 And The API user prepares a POST request containing the correct data to send to the user ticket add endpoint.passed
@@ -82,7 +82,7 @@ And The API user verifies that the error information in the response body is "Un
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As a user, I want to be able to create a new user ticket record through API connection." name="The creation of a new ticket record intended to be generated through the API should be" time="0.828">
+    <testcase classname="As a user, I want to be able to create a new user ticket record through API connection." name="The creation of a new ticket record intended to be generated through the API should be" time="0.787">
         <system-out>
             <![CDATA[Given The API user sets "user/ticket/detail/450" path parameters............passed
 And The API user saves the response from the user ticket detail endpoint with valid authorization information.passed
@@ -92,7 +92,7 @@ Then The API user verifies that the id information in the response body is 450.p
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As a user, I want to be able to update the user profile information in the system through API connection." name="When a PATCH request with valid authorization information and correct data" time="0.775">
+    <testcase classname="As a user, I want to be able to update the user profile information in the system through API connection." name="When a PATCH request with valid authorization information and correct data" time="0.792">
         <system-out>
             <![CDATA[Given The API user sets "user/profile" path parameters......................passed
 Then The API user prepares a PATCH request containing the correct data to send to the user profile endpoint.passed
@@ -102,7 +102,7 @@ And The API user verifies that the message information in the response body is "
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As a user, I want to be able to update the user profile information in the system through API connection." name="Verify that when a PATCH request with valid authorization information and" time="0.775">
+    <testcase classname="As a user, I want to be able to update the user profile information in the system through API connection." name="Verify that when a PATCH request with valid authorization information and" time="1.158">
         <system-out>
             <![CDATA[Given The API user sets "user/profile" path parameters......................passed
 Then The API user prepares a PATCH request containing the incomplete data to send to the user profile endpoint.passed
@@ -112,7 +112,7 @@ And The API user verifies that the remark information in the response body is "f
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As a user, I want to be able to update the user profile information in the system through API connection." name="Verify that when a PATCH request with valid authorization information" time="0.786">
+    <testcase classname="As a user, I want to be able to update the user profile information in the system through API connection." name="Verify that when a PATCH request with valid authorization information" time="0.742">
         <system-out>
             <![CDATA[Given The API user sets "user/profile" path parameters......................passed
 Then The API user prepares a PATCH request containing the without data to send to the user profile endpoint.passed
@@ -122,7 +122,7 @@ And The API user verifies that the remark information in the response body is "f
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As a user, I want to be able to update the user profile information in the system through API connection." name="Verify that when a PATCH request with invalid authorization information and" time="0.371">
+    <testcase classname="As a user, I want to be able to update the user profile information in the system through API connection." name="Verify that when a PATCH request with invalid authorization information and" time="0.293">
         <system-out>
             <![CDATA[Given The API user sets "user/profile" path parameters......................passed
 Then The API user prepares a PATCH request containing the correct data to send to the user profile endpoint.passed
@@ -130,7 +130,7 @@ Then The API user saves the response from the user profile endpoint with invalid
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As an administrator, I want to update the existing subscriber information via API connection." name="TC01: When a valid POST request with appropriate authorization credentials, correct data (email)," time="0.811">
+    <testcase classname="As an administrator, I want to update the existing subscriber information via API connection." name="TC01: When a valid POST request with appropriate authorization credentials, correct data (email)," time="0.687">
         <system-out>
             <![CDATA[Given The API user sets "api/subscriber/update/185" path parameters.........passed
 And The API user prepares a POST request containing the correct data to send to the subscriber update endpoint.passed
@@ -140,7 +140,7 @@ And The API user verifies that the message information in the subscriber respons
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As an administrator, I want to update the existing subscriber information via API connection." name="TC02: When a valid POST request with appropriate authorization credentials, correct (id), and an" time="0.769">
+    <testcase classname="As an administrator, I want to update the existing subscriber information via API connection." name="TC02: When a valid POST request with appropriate authorization credentials, correct (id), and an" time="0.696">
         <system-out>
             <![CDATA[Given The API user sets "api/subscriber/update/<id>" path parameters........passed
 And The API user prepares a POST request without data to send to the subscriber update endpoint.passed
@@ -150,7 +150,7 @@ And The API user verifies that the remark information in the response body is "f
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As an administrator, I want to update the existing subscriber information via API connection." name="TC03: When a valid POST request with appropriate authorization credentials, correct (id), and incorrect data" time="0.83">
+    <testcase classname="As an administrator, I want to update the existing subscriber information via API connection." name="TC03: When a valid POST request with appropriate authorization credentials, correct (id), and incorrect data" time="0.685">
         <system-out>
             <![CDATA[Given The API user sets "api/subscriber/update/<id>" path parameters........passed
 And The API user prepares a POST request incorrect data to send to the subscriber update endpoint.passed
@@ -160,7 +160,7 @@ And The API user verifies that the remark information in the response body is "f
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As an administrator, I want to update the existing subscriber information via API connection." name="TC04: When a POST request with valid authorization credentials and an empty (id) in the body" time="0.758">
+    <testcase classname="As an administrator, I want to update the existing subscriber information via API connection." name="TC04: When a POST request with valid authorization credentials and an empty (id) in the body" time="0.686">
         <system-out>
             <![CDATA[Given The API user sets "api/subscriber/update" path parameters.............passed
 And The API user prepares a POST request containing the correct data to send to the subscriber update endpoint.passed
@@ -170,7 +170,7 @@ And The API user verifies that the message information in the subscriber respons
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As an administrator, I want to update the existing subscriber information via API connection." name="TC05: When a POST request with valid authorization credentials and an (id) that does not correspond" time="0.868">
+    <testcase classname="As an administrator, I want to update the existing subscriber information via API connection." name="TC05: When a POST request with valid authorization credentials and an (id) that does not correspond" time="0.736">
         <system-out>
             <![CDATA[Given The API user sets "api/subscriber/update/<id>" path parameters........passed
 And The API user prepares a POST request containing the correct data to send to the subscriber update endpoint.passed
@@ -180,7 +180,7 @@ And The API user verifies that the message information in the subscriber respons
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As an administrator, I want to update the existing subscriber information via API connection." name="TC06: When an invalid POST request with unauthorized credentials, correct (id), and a body containing" time="0.355">
+    <testcase classname="As an administrator, I want to update the existing subscriber information via API connection." name="TC06: When an invalid POST request with unauthorized credentials, correct (id), and a body containing" time="0.291">
         <system-out>
             <![CDATA[Given The API user sets "api/subscriber/update/<id>" path parameters........passed
 And The API user prepares a POST request containing the correct data to send to the subscriber update endpoint.passed
@@ -190,7 +190,7 @@ And The API user verifies that the error information in the response body is "Un
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="As an administrator, I want to update the existing subscriber information via API connection." name="TC07: The update of the desired subscriber record via API should be confirmed by sending a GET request" time="0.733">
+    <testcase classname="As an administrator, I want to update the existing subscriber information via API connection." name="TC07: The update of the desired subscriber record via API should be confirmed by sending a GET request" time="0.823">
         <system-out>
             <![CDATA[Given The API user sets "api/subscriber/details/185" path parameters........passed
 And The API user saves the response from the subscriber update endpoint with valid authorization information.passed

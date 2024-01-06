@@ -172,7 +172,7 @@ public class DB_Stepdefinitions {
     public void update_query_is_prepared_and_executed_to_the_divice_tokens_table() throws SQLException {
 
         query = QueryManage.getDeviceTokensInsertQuery();
-        id = 16;
+        id = 18;
         user_id = 0;
         is_app = 5;
         token = "n5rlvicckd0x";
@@ -196,7 +196,7 @@ public class DB_Stepdefinitions {
     public void update_query_is_prepared_and_executed_to_the_catagories_table() throws SQLException {
 
         query = QueryManage.getCategoriesInsertQuery();
-        id = 706;
+        id = 708;
         name = "Beyza Nergiz";
         description = "Add data to the category table test";
         System.out.println("id : " + id);
@@ -235,7 +235,6 @@ public class DB_Stepdefinitions {
     }
 
 
-    // CAGLA DB_Stepdefinitions 850 - 1050 SATIR ARALIGI  US_06 ICIN
     @Given("supportMessagesQuery is prepared and executed.")
     public void support_messages_query_is_prepared_and_executed() throws SQLException {
         query = QueryManage.getsupportMessagesQuery();
@@ -276,7 +275,6 @@ public class DB_Stepdefinitions {
         }
     }
 
-    // CAGLA DB_Stepdefinitions 850 - 1050 SATIR ARALIGI  US_22 ICIN
     @Given("admin_password_resets_Query is prepared and executed.")
     public void admin_password_resets_query_is_prepared_and_executed() throws SQLException {
         query = QueryManage.getAdminPasswordResetsQuery();
@@ -317,7 +315,6 @@ public class DB_Stepdefinitions {
         assertEquals(1, verify);
     }
 
-    // CAGLA DB_Stepdefinitions 850 - 1050 SATIR ARALIGI  US_29 ICIN
     @Given("update_log tables insert Query prepared")
     public void update_log_tables_insert_query_prepared() throws SQLException {
         query = QueryManage.getInsertupdate_Logs();
@@ -340,7 +337,6 @@ public class DB_Stepdefinitions {
     }
 
 
-    //    aysegul 250 - 450
 
     @Given("CronSchedulesQuery is prepared.")
     public void cron_schedules_query_is_prepared() throws SQLException {
@@ -408,11 +404,9 @@ public class DB_Stepdefinitions {
         assertEquals(expectedInstallment, actualInstallment);
     }
 
-// aysegul 250 - 450
 
 
-    //*********************AYSE**********************
-//-------US05
+
     @Given("adminResetInsertQuery is prepared.")
     public void admin_reset_ınsert_query_is_prepared() throws SQLException {
         query = QueryManage.getAdminResetInsertQuery();
